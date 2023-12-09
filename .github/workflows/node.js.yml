@@ -28,5 +28,5 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm audit fix --force
-    - run: npm build
+    - run: npm run-script build
     - run: npm start
