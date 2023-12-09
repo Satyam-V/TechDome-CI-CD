@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     strategy:
       matrix:
@@ -29,5 +29,6 @@ jobs:
     - name: run commands
       run: |
         npm install
-        npm run-script build
+        npm audit fix --force
+        npm run build
         run: npm start
