@@ -24,7 +24,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: production-files
-          path: public
+          path: ./public
 
   publish-gpr:
     needs: build
@@ -42,10 +42,10 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: production-files
-          path: public
+          path: ./public
         
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.RUNNER_FOR_PAGE }}
-          publish_dir: ./dist
+          publish_dir: ./public
