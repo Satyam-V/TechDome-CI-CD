@@ -30,4 +30,4 @@ jobs:
       run: |
         npm i
         npm run build
-        run: npm start
+        npm start
