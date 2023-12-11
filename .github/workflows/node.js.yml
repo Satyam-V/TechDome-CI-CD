@@ -28,5 +28,6 @@ jobs:
         cache: 'npm'
     - name: run commands
       run: |
+        npm i
         npm run build
         run: npm start
