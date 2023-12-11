@@ -1,7 +1,6 @@
 {
   "name": "blog_website",
   "version": "0.1.0",
-  "homepage": "https://satyam-v.github.io/techdome-ci-cd/"
   "private": false,
   "dependencies": {
     "@emotion/react": "^11.11.0",
